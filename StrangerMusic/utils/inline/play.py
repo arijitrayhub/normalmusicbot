@@ -42,6 +42,17 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
             ),
         ],
         [
+
+            InlineKeyboardButton(
+
+                text=_["S_B_5"],
+
+                url=f"https://t.me/Valkyrae_x_Music_bot?startgroup=true",
+
+            )
+
+        ],
+        [
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
             )
@@ -64,9 +75,16 @@ def telegram_markup_timer(_, chat_id, played, dur):
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
+
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
             ),
+        ],
+        [
+            InlineKeyboardButton(
+                text=_["S_B_5"],
+                url=f"https://t.me/Valkyrae_x_Music_bot?startgroup=true",
+            )
         ],
     ]
     return buttons
@@ -86,6 +104,17 @@ def stream_markup(_, videoid, chat_id):
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
+        ],
+        [
+
+            InlineKeyboardButton(
+
+                text=_["S_B_5"],
+
+                url=f"https://t.me/Valkyrae_x_Music_bot?startgroup=true",
+
+            )
+
         ],
         [
             InlineKeyboardButton(
